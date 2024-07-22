@@ -1,0 +1,359 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+   <!-- Settings -->
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Project Coral | Roleplay</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/441585960b.js" crossorigin="anonymous"></script>
+      <style>
+	      /* Main Website Style */
+	      
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+
+/* Header and Footer Styles */
+
+header {
+	color: #000;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	backdrop-filter: blur(5px);
+	font-size: 18px;
+	width: 100%;
+	margin: 0;
+	z-index: 20;
+}
+
+footer {
+	color: #fff;
+	backdrop-filter: blur(5px);
+	font-size: 18px;
+	margin: 0;
+	background-color: #404040;
+	padding: 10px 10px;
+}
+
+footerlink {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	border-radius: 7px;
+	padding: 2px 2px;
+	opacity: 0.6;
+	transition: 0.1s;
+	padding-bottom: 3px;
+  color: #fff;
+}
+
+footerlink:hover {
+	background-color: #fff;
+	opacity: 0.6;
+	color: #404040;
+}
+
+/* Input Styles */
+
+input[type=text],
+select {
+
+	width: 100%;
+	padding: 8px 8px;
+	background-color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	border: 2px solid #404040;
+	border-radius: 7px;
+	padding: 10px 20px;
+	font-size: 16px;
+	opacity: 0.6;
+	transition: 0.1s;
+}
+
+input[type=submit] {
+
+	background-color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	border: 2px solid #404040;
+	border-radius: 7px;
+	padding: 10px 20px;
+	font-size: 16px;
+	opacity: 0.6;
+	transition: 0.1s;
+	width: 100%;
+}
+
+input[type=submit]:hover {
+
+	background-color: #404040;
+}
+
+/* Text Styles */
+
+h2 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	text-align: center;
+}
+
+p {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18px;
+	text-align: center;
+}
+
+sp {
+  font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12px;
+	text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+sp:hover {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  text-align: center;
+  color: #0069f3;
+  text-decoration: none;
+}
+
+update {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  font-size: 20px;
+}
+/* Button */
+
+button {
+	background-color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	border: 0px solid #404040;
+	border-radius: 7px;
+	padding: 10px 20px;
+	font-size: 16px;
+	opacity: 0.6;
+	transition: 0.1s;
+	color: #000;
+	border: 2px solid #404040;
+}
+
+button:hover {
+	border: 2px solid #404040;
+	background-color: #404040;
+	color: #fff;
+}
+
+/* Purchase Button */
+
+purchase {
+	background-color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	border: 2px solid #404040;
+	border-radius: 7px;
+	padding: 10px 20px;
+	font-size: 16px;
+	opacity: 0.6;
+	transition: 0.1s;
+	color: #000;
+	text-decoration: none;
+}
+
+purchase:hover {
+	background-color: #6fc276;
+	color: #ffffff;
+}
+
+/* Header */
+
+.header {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	background-color: #f1f1f1;
+	padding: 30px;
+	text-align: center;
+}
+
+#navbar {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	overflow: hidden;
+	background-color: #33333300;
+}
+
+#navbar a {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	float: left;
+	display: block;
+	color: #000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+#navbar a:hover {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	background-color: #dddddd2c;
+	color: black;
+	border-radius: 7px;
+}
+
+#navbar a.active {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	background-color: #acacac9c;
+	color: black;
+	border-radius: 7px;
+}
+
+.content {
+	padding: 16px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky+.content {
+	padding-top: 60px;
+}
+
+/* Images */
+
+img {
+	border: 2px solid #404040;
+	border-radius: 7px;
+}
+      </style>
+   </head>
+   <body>
+
+      <!-- Header -->
+
+      <header>
+         <div id="navbar">
+            <a><i class="fa-solid fa-signature"></i>   Project Coral</a>
+            <a class="active" href="javascript:void(0)">Home</a>
+            <a href="javascript:void(0)">News</a>
+            <a href="javascript:void(0)">Contact</a>
+         </div>
+      </header>
+
+      <!-- Main Website Content -->
+      
+      <!-- Title -->
+      <h2>Project Coral: Roblox</h2>
+      
+      <!-- Tagline (long) -->
+      <p>Welcome to Project Coral, an amazingly immersive roleplay experience available for the PC players of Roblox. Please note that Project Coral has not yet been fully released and will have some major map updates and bugs. Please stay patient.</p>
+        <br>
+
+      <!-- Title -->
+      <h2>Recent Updates</h2>
+
+      <!-- Paragraph explaining the updates -->
+      <p>As Project Coral is constantly being updated, we like to make sure you can stay in the loop with updates. You can view the most recent updates below. There is a full update log available in-game and on a seperate page.</p>
+
+      <br><br>
+
+      <!-- First Update -->
+      <update>Pre-Release V0.1</update>
+      <br>
+      <br>
+	   <code>
+	- New added vehicles,	<br>
+	- Map changes, 		<br>
+	- Gun system updates, 	<br>
+	- Bug Fixes, 		<br>
+	   </code>
+	   <br>
+      <a href="https://projectcoral.us/updates/log/pre-release/v01">
+        <button>View full update log</button> 
+     </a>
+     <br>
+
+      <!-- Footer -->
+       <br><br>
+<footer>
+      <!-- Copyright Notice & Links -->
+      <p>Copyright Project Coral 2024</p>
+      <p>Links</p>
+      <a href="https://discord.gg/5XvwwDMZwg">
+        <footerlink><i class="fa-brands fa-discord"></i></footerlink> 
+     </a>
+     <br><br>
+
+<!-- Credits -->
+<a href="https://discord.gg/5XvwwDMZwg">
+  <sp>Created using <br><i class="fa-brands fa-html5"></i>  <i class="fa-brands fa-square-js"></i>   <i class="fa-brands fa-css3-alt"></i></sp>
+  </a>
+  <br><br>
+
+<a href="https://discord.gg/5XvwwDMZwg">
+<sp>Created by <br><i class="fa-solid fa-signature"></i> Project Coral</sp>
+</a>
+</footer>
+   </body>
+
+
+   <!-- Scripts -->
+   <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      window.onclick = function(event) {
+        if (!event.target.matches('.fa-solid fa-ellipsis')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      
+   </script>
+</html>
