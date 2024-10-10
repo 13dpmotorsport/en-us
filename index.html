@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<title>Project Coral</title>
+<title>Fluid Development</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,255 +11,326 @@
 <script src="https://kit.fontawesome.com/b62363276e.js" crossorigin="anonymous"></script>
 
 <style>
-
-/* Main Styles */
-
-
-body {
-background-color: #46474a;
-margin: 0px;
-width: 100%;
-height: 100%;
-}
-
-header {
-border-radius: 10px;
-color: #000;
-position: -webkit-sticky;
-position: sticky;
-top: 0;
-backdrop-filter: blur(5px);
-font-size: 18px;
-padding: 5px 5px;
-margin: 0px;
-}
-
-
-/* Text Styles */
-
-
-h2 {
-font-family: "Inter", system-ui;
-font-weight: 500;
-font-style: normal;
-margin-left: 10px;
-background: #0069F3;
-background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-font-size: 30px;
-}
-
-h2:hover {
-font-family: "Inter", system-ui;
-font-weight: 500;
-font-style: normal;
-margin-left: 10px;
-background: #0069F3;
-background: linear-gradient(to top, #FFB6C1 0%, #FFFFFF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-font-size: 30px;
-}
  
-headertext {
-color: #ffffff;
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-border-radius: 20px;
-padding: 2px 2px;
-transition: 0.1s;
-}
- 
-headertext:hover {
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-background: #0069F3;
-background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
+  /* Main Styles */
+   
+   
+  body {
+  background-color: #46474a;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  }
+   
+  header {
+  border-radius: 10px;
+  color: #000;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(2px);
+  font-size: 18px;
+  padding: 5px 5px;
+  margin: 0px;
+  z-index: 100;
+  }
+   
+   
+  /* Text Styles */
+   
+   
+  h2 {
+  color: #ffffff;
+  font-family: "Inter", system-ui;
+  font-weight: 500;
+  font-style: normal;
+  margin-left: 10px;
+  font-size: 30px;
+  transition: 0.2s;
+  text-align: center;
+  }
+   
+  h2:hover {
+  color: #6fa6ed;
+  font-family: "Inter", system-ui;
+  font-weight: 500;
+  font-style: normal;
+  margin-left: 10px;
+  font-size: 30px;
+  }
 
+  h3 {
+  color: #ffffff;
+  font-family: "Inter", system-ui;
+  font-weight: 500;
+  font-style: normal;
+  margin-left: 10px;
+  font-size: 25px;
+  transition: 0.2s;
+  text-align: center;
+  }
+   
+  h3:hover {
+  color: #FFB6C1;
+  font-family: "Inter", system-ui;
+  font-weight: 500;
+  font-style: normal;
+  margin-left: 10px;
+  font-size: 25px;
+  text-align: center;
+  }
 
-text {
-color: #ffffff;
-font-family: "Inter", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 18px;
-margin-left: 10px;
-}
- 
-a {
-text-decoration: none;
-width: 20%;
-}
+  headertext {
+  color: #ffffff;
+  font-family: "Inter", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 20px;
+  padding: 2px 2px;
+  transition: 0.2s;
+  font-size: 25px;
+  }
 
-texthighlight {
-color: #ffffff;
-font-family: "Inter", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 18px;
-}
+  headertext:hover {
+  font-family: "Inter", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #6fa6ed;
+  font-size: 25px;
+  }
+   
+   
+  p {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  margin-left: 10px;
+  text-align: center;
+  }
 
-texthighlight:hover {
-color: #ffffff;
-font-family: "Inter", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 18px;
-background: #0069F3;
-background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
+  a {
+  text-decoration: none;
+  width: 20%;
+  }
+   
+  texthighlight {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  transition: 0.2s;
+  }
+   
+  texthighlight:hover {
+  color: #6fa6ed;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  }
+   
+  /* Text Button Styles */
+   
+   
+  coralplus {
+  color: #ffffff;
+  font-family: "Inter", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 20px;
+  padding: 2px 2px;
+  transition: 0.2s;
+  font-size: 25px;
+  }
 
-textgradient {
-color: #ffffff;
-font-family: "Inter", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 18px;
-background: #0069F3;
-background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-
-/* Text Button Styles */
-
-
-coralplus {
-color: #ffffff;
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-border-radius: 20px;
-padding: 2px 2px;
-transition: 0.1s;
-}
- 
-coralplus:hover {
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-background: #0069F3;
-background: linear-gradient(to top, #FFC0CB 0%, #FFFFFF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
- 
-join {
-color: #ffffff;
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-border-radius: 20px;
-padding: 2px 2px;
-transition: 0.1s;
-}
- 
-join:hover {
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-background: #0069F3;
-background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-
-
-/* Button Styles */
-
-
-download {
-color: #ffffff;
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-border-radius: 20px;
-padding: 2px 2px;
-transition: 0.1s;
-}
- 
-download:hover {
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-background: #0069F3;
-background: linear-gradient(to top, #FFC0CB 0%, #FFFFFF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-
+  coralplus:hover {
+  font-family: "Inter", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFB6C1;
+  font-size: 25px;
+  }
   
-button {
-color: #ffffff;
-background-color: #5e5e5e;
-border: 2px solid #5e5e5e;
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-border-radius: 20px;
-padding: 10px 20px;
-font-size: 16px;
-opacity: 0.8;
-transition: 0.1s;
-margin-left: 10px;
-}
+  coralplus2 {
+  color: #ffffff;
+  font-family: "Inter", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 20px;
+  padding: 2px 2px;
+  transition: 0.2s;
+  font-size: 25px;
+  display: block;
+  margin: auto;
+  }
+
+  coralplus2:hover {
+  font-family: "Inter", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFB6C1;
+  font-size: 25px;
+  display: block;
+  margin: auto;
+  }
+   
+  /* Button Styles */
+   
+    
+  button {
+  color: #ffffff;
+  background-color: #5e5e5e;
+  border: 2px solid #5e5e5e;
+  font-family: "Inter", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: 0.2s;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: block;
+  margin: auto;
+  width: 90%;
+  }
+
+  button:hover {
+  background-color: #46474a;
+  border: 2px solid #5e5e5e;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: block;
+  margin: auto;
+  width: 89%;
+  }
+   
+   
+  /* Input Styles */
+   
+   
+  input {
+  color: #ffffff;
+  background-color: #46474a;
+  border: 2px solid #5e5e5e;
+  font-family: "Inter", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  opacity: 0.8;
+  transition: 0.2s;
+  margin-left: 10px;
+  display: block;
+  margin: auto;
+  caret-color: #0069f3; 
+  }
+   
+  input:hover {
+  color: #ffffff;
+  background-color: #46474a;
+  border: 2px solid #5e5e5e;
+  font-family: "Inter", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  opacity: 0.8;
+  transition: 0.5s;
+  margin-left: 10px;
+  background: #0069F3;
+  background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+  margin: auto;
+  caret-color: #0069f3; 
+  }
+
+  microphone {
+  color: #ffffff;
+  background-color: #5e5e5e;
+  border: 2px solid #674846;
+  font-family: "Inter", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: 0.2s;
+  margin-left: 10px;
+  display: block;
+  margin: auto;
+  width: 95%;
+  text-align: center;
+  }
+
+  microphone:hover {
+  color: #ffffff;
+  background-color: #674846;
+  border: 2px solid #5e5e5e;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: block;
+  margin: auto;
+  width: 95%;
+  }
+   
+   
+  /* Other CSS Stuff */
+   
+  .collapsible {
+  width: 90%;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: block;
+  margin: auto;
+  }
+  
+  .active, .collapsible:hover {
+  background-color: #46474a;
+  border: 2px solid #5e5e5e;
+  width: 89%;
+  }
+   
+  .content {
+  font-family: "Inter", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  padding: 10px;
+  display: none;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-left: 10px; 
+  margin-right: 10px;
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 17px;
+  width: 96.8%;
+  background-color: #555555;
+  border: 2px solid #5e5e5e;
+  transition: 0.2s;
+  margin: auto;
+  margin-top: 20px;
+  }
+   
+  ::-moz-selection {
+  color: #ffffff;
+  background: #5e5e5e;
+  }
  
-button:hover {
-background: #0069F3;
-background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-color: #747474;
-border: 2px solid #5e5e5e;
-border-radius: 20px;
-opacity: 0.8;
-}
+  ::selection {
+  color: #ffffff;
+  background: #5e5e5e;
+  }
 
-
-/* Box Styles */
-
-
-input {
-color: #ffffff;
-background-color: #46474a;
-border: 2px solid #5e5e5e;
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-border-radius: 20px;
-padding: 10px 20px;
-font-size: 16px;
-opacity: 0.8;
-transition: 0.1s;
-margin-left: 10px;
-}
-
-input:hover {
-color: #ffffff;
-background-color: #46474a;
-border: 2px solid #5e5e5e;
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-border-radius: 20px;
-padding: 10px 20px;
-font-size: 16px;
-opacity: 0.8;
-transition: 0.1s;
-margin-left: 10px;
-background: #0069F3;
-background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
 
 </style>
 </head>
@@ -268,37 +339,68 @@ background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
 <body>
 
 <header>
-<a href="https://projectcoral.xyz/"><headertext><i class="fa-solid fa-computer"></i> Project Coral</headertext></a>
-<a href="https://projectcoral.xyz/coralplus"><coralplus><i class="fa-solid fa-leaf"></i> Coral+</coralplus></a>
+<a href="https://fluidui.dev/"><headertext><i class="fa-solid fa-ghost"></i>   FluidUI</headertext></a>
+<a href="https://fluidui.dev/fluiduiplus"><coralplus><i class="fa-solid fa-gem"></i>   FluidUI+</coralplus></a>
 </header>
 
-<a href="https://projectcoral.xyz/whitelist-request"><h2>Example<br>title</h2></a>
+<a href="https://fluidui.dev/"><h2>Welcome!</h2></a>
+<p>
+At FluidUI, we specialize in creating intuitive, immersive, and visually stunning user interfaces for video games. Our team of passionate designers and developers is dedicated to crafting seamless UI experiences that enhance gameplay and bring game worlds to life. From minimalistic designs to complex interactive systems, we ensure every element is both functional and aesthetically engaging, offering players an unparalleled gaming experience.
+<br><br>
+Whether it's menus, HUDs, or intricate in-game interactions, FluidUI blends creativity with usability, ensuring that every game we touch feels fluid, responsive, and player-centric. Let us help you elevate your game with cutting-edge UI design.
+</p>
+<br>
 
-<text>No description added yet.</text>
+<h3>Our Products</h3>
+<p>At FluidUI, we offer a suite of innovative products designed to elevate user interface design for game developers. Our tools and assets focus on optimizing user experience, making it easy to integrate beautifully crafted, functional interfaces into any game.</p>
 <br><br>
-<a href="https://projectcoral.xyz/"><button><i class="fa-solid fa-user-plus"></i> Join today</button></a>
-<a href="https://projectcoral.xyz/"><button><i class="fa-solid fa-download"></i> Download CoralChassis</button></a>
-
-<br><br>
-
-<h2>Example header, changes gradient colour on hover.</h2>
-<text>enter text</text>
-<br><br>
-<texthighlight>  changes colour on hover</texthighlight>
-<br><br>
-<textgradient>  gradient text</textgradient>
-<br><br>
-<input type="text" placeholder="enter some text">
-<br><br>
-
-<h2>Headphone Warning</h2>
-<text>Project Coral uses <a href="https://projectcoral.xyz/"><texthighlight>Realistic Audio Systems</texthighlight></a> which could damage the hearing of users who use headphones on full volume. Do not play on full volume.</text>
+<p>Custom UI Assets: Our vast collection of high-quality, customizable UI assets includes icons, menus, buttons, HUDs, and more. Designed to fit a wide variety of game genres and styles, these assets can be tailored to meet the specific needs of any project.</p>
+<br>
+<p>Dynamic HUD Systems: FluidUI's dynamic HUD systems provide game developers with adaptable, real-time interfaces that respond to in-game actions. Whether it's a health bar, inventory system, or map display, our solutions ensure smooth and intuitive gameplay experiences.</p>
+<br>
+<p>Cross-Platform Compatibility: Our products are designed with cross-platform compatibility in mind, ensuring your game UI functions seamlessly across consoles, PCs, and mobile devices.</p>
+<br>
+<p>FluidUI's products empower developers to create beautiful, responsive, and engaging user interfaces with minimal effort, allowing you to focus on building the core gameplay experience while we handle the player’s interaction layer.</p>
+<a href="https://fluidui.dev/fluiduiplus"><button><i class="fa-solid fa-bag-shopping"></i>   Start Shopping!</button></a>
+<br>
+<a href="https://fluidui.dev/fluiduiplus"><button><i class="fa-solid fa-gem"></i>   FluidUI+</button></a>
+<br>
+<microphone><i class="fa-solid fa-microphone-slash"></i></microphone>
 
 
-<h2>Proximity Chat Guidelines</h2>
-<text><a href="https://projectcoral.xyz/"><texthighlight>Proximity Chat</texthighlight></a> has recently been added to Project Coral. Therefore, we have set some guidelines on how to safely use it. You can view these below.</text>
+<h2>Information</h2>
+<button type="button" class="collapsible"><i class="fa-solid fa-pen"></i>    Custom Orders</button>
+<div class="content">
+<p>Custom Orders will soon be available at our Custom Order website: https://customorders.fluidui.dev/<br>
+</p>
+</div>
 <br><br>
-<a href="https://projectcoral.xyz/"><button>View Guidelines</button></a>
+
+<br><br>
+<h2>View our Work</h2>
+<footer>
+<a href="https://fluidui.dev/"><coralplus>Copyright FluidUI. All rights reserved.</coralplus></a>
+</footer>
+
 
 </body>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+
+
 </html>
