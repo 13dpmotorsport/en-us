@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<head>
+ 
+<title>goofy aah</title>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Emoji:wght@300..700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/b62363276e.js" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<style>
+ 
+
+/* Main Styles */
+
+body {
+background-color: #1a1a1a;
+margin: 0px;
+width: 100%;
+height: 100%;
+}
+
+
+/* Header & Footer Styles */
+
+
+header {
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+backdrop-filter: blur(2px);
+padding-left: 5px;
+}
+ 
+footer {
+border-radius: 10px;
+position: -webkit-sticky;
+position: sticky;
+bottom: 0;
+backdrop-filter: blur(5px);
+font-size: 18px;
+padding: 5px 5px;
+display: block;
+margin: auto;
+}
+
+
+/* Text Styles */
+
+
+h1 {
+color: #c0c0c0;
+font-family: "Inter", system-ui;
+font-weight: 300;
+font-style: normal;
+font-size: 30px;
+cursor: default;
+}
+
+h2 {
+color: #c0c0c0;
+font-family: "Inter", system-ui;
+font-weight: 500;
+font-style: normal;
+font-size: 30px;
+transition: 0.2s;
+text-align: center;
+cursor: default;
+}
+
+h3 {
+color: #005039;
+font-family: "Inter", system-ui;
+font-weight: 500;
+font-style: normal;
+font-size: 30px;
+transition: 0.2s;
+text-align: center;
+cursor: default;
+}
+
+h4 {
+color: #a37e2c;
+font-family: "Inter", system-ui;
+font-weight: 500;
+font-style: normal;
+font-size: 30px;
+transition: 0.2s;
+text-align: center;
+cursor: default;
+}
+
+h5 {
+color: #a37e2c;
+font-family: "Inter", system-ui;
+font-weight: 300;
+font-style: normal;
+font-size: 25px;
+text-align: center;
+cursor: default;
+}
+
+h6 {
+color: #c0c0c0;
+font-family: "Inter", system-ui;
+font-weight: 300;
+font-style: normal;
+font-size: 25px;
+text-align: center;
+cursor: default;
+}
+ 
+p {
+color: #c0c0c0;
+font-family: "Inter", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 18px;
+margin-left: 10px;
+text-decoration: none;
+cursor: default;
+}
+
+emoji {
+font-family: "Noto Emoji", sans-serif;
+cursor: default;
+}
+ 
+a {
+text-decoration: none;
+width: 20%;
+cursor: default;
+}
+ 
+texthighlight {
+color: #c0c0c0;
+font-family: "Inter", sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 18px;
+transition: 0.2s;
+text-decoration: underline;
+text-decoration-color: #c0c0c0;
+cursor: default;
+}
+ 
+texthighlight:hover {
+color: #a37e2c;
+font-family: "Inter", sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 18px;
+text-decoration: underline;
+text-decoration-color: #a37e2c;
+cursor: default;
+}
+ 
+headerlink {
+color: #ffffff;
+font-family: "Inter", sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 18px;
+transition: 0.2s;
+cursor: pointer;
+}
+ 
+headerlink:hover {
+color: #005039;
+font-family: "Inter", sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 18px;
+cursor: pointer;
+}
+
+.headertext {
+color: #ffffff;
+font-family: "Inter", system-ui;
+font-weight: 500;
+font-style: normal;
+font-size: 25px;
+border-radius: 5px;
+transition: 0.2s;
+margin: 1px;
+text-decoration: none;
+cursor: pointer;
+}
+ 
+.headertext:hover {
+color: #005039;
+font-family: "Inter", system-ui;
+font-weight: 500;
+font-style: normal;
+border-radius: 5px;
+transition: 0.2s;
+margin: 1px;
+text-decoration: none;
+cursor: pointer;
+}
+
+
+/* Button Styles */
+
+
+button {
+color: #ffffff;
+background-color: #005039;
+border: 2px solid #5e5e5e;
+border-radius: 20px;
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+padding: 10px 20px;
+font-size: 16px;
+transition: 0.2s;
+margin-left: 10px;
+display: block;
+margin: auto;
+width: 90%;
+cursor: pointer;
+}
+ 
+button:hover {
+color: #005039;
+background-color: #c0c0c0;
+border: 2px solid #005039;
+border-radius: 20px;
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+padding: 10px 20px;
+font-size: 16px;
+transition: 0.2s;
+margin-left: 10px;
+display: block;
+margin: auto;
+width: 90%;
+cursor: pointer;
+}
+
+
+/* Input Styles */
+
+
+input {
+color: #005039;
+background-color: #c0c0c0;
+border: 2px solid #005039;
+font-family: "Inter", system-ui;
+font-weight: 500;
+font-style: normal;
+border-radius: 20px;
+padding: 10px 20px;
+font-size: 16px;
+transition: 0.2s;
+margin-left: 10px;
+display: block;
+margin: auto;
+width: 80%;
+cursor: text;
+}
+
+input:hover {
+color: #ffffff;
+background-color: #005039;
+border: 2px solid #c0c0c0;
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+border-radius: 20px;
+margin-left: 10px;
+margin-right: 10px;
+display: block;
+margin: auto;
+width: 80%;
+cursor: text;
+}
+
+
+/* Update Log Styles */
+
+updatelog {
+color: #c0c0c0;
+font-family: "Inter", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 18px;
+margin-left: 10px;
+text-decoration: none;
+cursor: default;
+width: 90%;
+display: block;
+margin: auto;
+border-radius: 10px;
+border: 2px solid #c0c0c0;
+padding: 10px;
+text-align: center;
+}
+
+updatelogpop {
+color: #c0c0c0;
+font-family: "Inter", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 18px;
+margin-left: 10px;
+text-decoration: none;
+cursor: default;
+width: 90%;
+display: block;
+margin: auto;
+border-radius: 10px;
+padding: 10px;
+text-align: center;
+}
+
+/* Text Buttons Styles */
+
+
+headerlink {
+color: #ffffff;
+font-family: "Inter", sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 18px;
+transition: 0.2s;
+cursor: pointer;
+}
+
+headerlink:hover {
+color: #005039;
+font-family: "Inter", sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 18px;
+cursor: pointer;
+}
+
+
+/* FAQ Styles */
+
+
+.collapsible {
+color: #ffffff;
+background-color: #005039;
+border: 2px solid #5e5e5e;
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+border-radius: 20px;
+padding: 10px 20px;
+font-size: 16px;
+transition: 0.2s;
+margin-left: 10px;
+display: block;
+margin: auto;
+width: 90%;
+}
+
+.collapsible:hover {
+color: #005039;
+background-color: #c0c0c0;
+border: 2px solid #005039;
+border-radius: 20px;
+margin-left: 10px;
+margin-right: 10px;
+display: block;
+margin: auto;
+width: 90%;
+}
+
+.content {
+color: #c0c0c0;
+background-color: #005039;
+border: 2px solid #5e5e5e;
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+padding: 10px;
+display: none;
+overflow: hidden;
+border-radius: 10px;
+margin-left: 10px; 
+margin-right: 10px;
+margin-top: 10px;
+font-size: 17px;
+margin: auto;
+width: 95%;
+margin-top: 20px;
+}
+ 
+.active {
+color: #ffffff;
+background-color: #005039;
+border: 2px solid #c0c0c0;
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+border-radius: 20px;
+font-size: 16px;
+transition: 0.2s;
+margin-left: 10px;
+display: block;
+margin: auto;
+width: 90%;
+}
+
+
+/* Main Menu Styles */
+
+
+.menuopen {
+color: #005039;
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+border-radius: 20px;
+padding-bottom: 20px;
+transition: 0.2s;
+display: block;
+margin: 1px;
+}
+ 
+.menucontent {
+border: 2px solid #5e5e5e;
+color: #ffffff;
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+padding: 15px;
+padding-bottom: 30px;
+padding-right: 30px;
+display: none;
+overflow: hidden;
+border-radius: 10px;
+font-size: 17px;
+width: 25%;
+margin-left: 10px;
+}
+ 
+
+/* Image Styles */
+ 
+
+img {
+border-radius: 10px;
+display: block;
+margin: auto;
+height: 90%;
+width: 90%;
+}
+ 
+
+/* Popup Box Styles */
+ 
+
+.modal-content {
+color: #ffffff;
+background-color: #1a1a1a;
+margin: auto;
+padding: 20px;
+border: 1px solid #c0c0c0;
+border-radius: 10px;
+width: 80%;
+}
+ 
+.close {
+color: #ffffff;
+float: right;
+font-size: 28px;
+font-weight: bold;
+cursor: pointer;
+}
+ 
+.close:hover,
+.close:focus {
+color: #005039;
+text-decoration: none;
+cursor: pointer;
+}
+ 
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+padding-top: 100px;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0,0.4);
+}
+ 
+
+/* Highlight */
+ 
+
+::-moz-selection {
+color: #c0c0c0;
+background: #005039;
+}
+ 
+::selection {
+color: #c0c0c0;
+background: #005039;
+}
+
+</style>
+
+</head>
+<html>
+<body>
+
+<header>
+<br>
+<headertext type="button" class="headertext"><i class="fa-solid fa-bars"></i></headertext>
+ 
+<div class="menucontent">
+<h1><emoji>🍂 </emoji>Project Clearwood</h1>
+<a href="https://projectcoral.xyz/"><headerlink><emoji>🍂</emoji> Home</headerlink></a>
+<br><br>
+<a href="https://discord.gg/6snXmWTr2F"><headerlink><emoji>💬</emoji> Discord</headerlink></a>
+</div>
+</header>
+<h2>Welcome to Project Clearwood.</h2>
+<p>Project Clearwood is an upcoming Roleplay Game offering an ultra-realistic experience for all players.</p>
+
+<h5><emoji>🍂</emoji> Autumn Update.</h5>
+<updatelog>
+Orange Leaves,
+<br>
+Ui Changes,
+<br>
+More Vehicles,
+<br>
+Bug Fixes,
+<br>
++ much more to discover!
+</updatelog>
+<br><br>
+<button id="open">View Full Update Log</button>
+<div id="myModal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<updatelogpop>
+
+  Changed the color of the grass material,
+  <br><br>
+  Added more liveries for Sheriff and Park Ranger,
+  <br><br>
+  Added Money System,
+  <br><br>
+  Added additional teams,
+  <br><br>
+  Added more trees,
+  <br><br>
+  Changed Team Changer Ui,
+  <br><br>
+  Added Update Log Ui,
+  <br><br>
+  Added changes to the Park Ranger District,
+  <br><br>
+  Changed areas around the Sheriff's Office,
+  <br><br>
+  Edited Radio System Ui,
+  <br><br>
+  Working on editing the Vehicle Spawner Ui,
+  <br><br>
+  Added more foliage around the map,
+  <br><br>
+  Added more road details around the map
+  <br><br>
+  Added ruins!
+  <br><br>
+  Bug Fixes.
+
+</updatelogpop>
+</div>
+</div>
+
+<h6>Breaking News</h6>
+<p>
+Three Law Enforcement Officers have been reported missing in the city of Clearwood on 10/14/24. They were last spotted at the Crayon Mountain.
+<br><br>
+Law Enforcement Explorers, Clearwood Police Department, Tobacco City Fire Department, Raspberry County Sheriff's Office and Clearwood Park Rangers Department have been working tirelessly during the thunderstorm to find the missing officers.
+</p>
+<img src="1.png">
+<br>
+<img src="2.png">
+<br>
+<img src="3.png">
+<br>
+<img src="4.png">
+<br>
+<img src="5.png">
+
+
+
+
+
+
+
+<h6>Frequently Asked Questions.</h6>
+<button type="button" class="collapsible">How do I spawn a vehicle?</button>
+<div class="content">
+<p>From spawn, you need to navigate to the team-colored circle located near the spawn location. Hold E, then wait for the Spawn Vehicle prompt to appear. Pick a vehicle of coice and have fun!</p>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script>
+var coll = document.getElementsByClassName("headertext");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("menuopen");
+    var menucontent = this.nextElementSibling;
+    if (menucontent.style.display === "block") {
+      menucontent.style.display = "none";
+    } else {
+      menucontent.style.display = "block";
+    }
+  });
+}
+</script>
+ 
+<script>
+  var modal = document.getElementById("myModal");
+  var btn = document.getElementById("open");
+  var span = document.getElementsByClassName("close")[0];
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+</html>
