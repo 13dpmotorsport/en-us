@@ -2397,7 +2397,7 @@ input:checked + .toggle-bg {
 
   .lg\:text-purple-700 {
     --tw-text-opacity: 1;
-    color: rgb(108 43 217 / var(--tw-text-opacity));
+    color: rgb(29 69 65 / var(--tw-text-opacity));
   }
 
   .lg\:hover\:bg-transparent:hover {
@@ -2406,7 +2406,7 @@ input:checked + .toggle-bg {
 
   .lg\:hover\:text-purple-700:hover {
     --tw-text-opacity: 1;
-    color: rgb(108 43 217 / var(--tw-text-opacity));
+    color: rgb(29 69 65 / var(--tw-text-opacity));
   }
 
   .dark .lg\:dark\:hover\:bg-transparent:hover {
